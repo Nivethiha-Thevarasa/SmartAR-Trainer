@@ -1,61 +1,39 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+# =========================
+# Unity folders
+# =========================
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
 
-# PyInstaller
-*.manifest
-*.spec
+# Build output (your case)
+Unity/CRUNCHES_AR_EXE/
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
+# =========================
+# Environment files (IMPORTANT)
+# =========================
+.env
+.env.*
+*.env
 
-# Virtual Environment
-venv/
-ENV/
-env/
-.venv
+# =========================
+# Secrets / credentials
+# =========================
+config.json
+secrets.json
 
-# IDE
+# =========================
+# IDE / OS files
+# =========================
 .vscode/
 .idea/
-*.swp
-*.swo
-*~
 .DS_Store
+Thumbs.db
 
+# =========================
 # Logs
+# =========================
 *.log
-*.db-wal
-*.db-shm
