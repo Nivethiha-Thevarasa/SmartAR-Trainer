@@ -15,7 +15,7 @@ from PyQt6.QtGui import QFont
 
 class _NoWheelMixin:
     """Mixin to disable mouse-wheel changing values (lets parent scroll instead)."""
-    def wheelEvent(self, event):  # noqa: N802 (Qt naming)
+    def wheelEvent(self, event):  
         event.ignore()
 
 
@@ -56,7 +56,7 @@ class FitnessForm(QWidget):
         QMessageBox.warning(self, title, message)
 
     # ======================================================
-    #  ✅ NEW: Ask consent before storing fitness details
+    #  NEW: Ask consent before storing fitness details
     # ======================================================
     def ask_storage_consent(self) -> bool:
         """
