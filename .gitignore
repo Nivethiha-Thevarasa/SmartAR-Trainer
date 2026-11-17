@@ -54,9 +54,6 @@ db_data.json
 db_dump.json
 last_activity.json
 
-# Unity executable builds
-Unity/*_AR_EXE/
-Unity/PLANK_AR_EX/
 
 # Frontend dependencies
 node_modules/
