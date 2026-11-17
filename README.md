@@ -1,49 +1,99 @@
-# SMARTAR Trainer (Desktop App)
 
-Lightweight desktop application for AR-guided workouts, activity tracking, and analytics.
+# SMART AR Trainer
 
-This repository contains the desktop client, backend helpers, machine learning models, and Unity AR builds used by the SMARTAR Trainer project.
+### Personalized Real-Time Posture Correction and Augmented Reality Feedback Framework for Home Workout Activities
 
-## Quick Start
+## About the Project
 
-- Prerequisites: Python 3.8+ and pip.
-- Install Python dependencies:
+**SMART AR Trainer** is an intelligent home workout assistance system designed to help users perform exercises with proper posture and technique.
 
-```bash
-pip install -r requirements.txt
-```
+The system combines computer vision, machine learning, and augmented reality to monitor workout activities, count exercise repetitions, provide posture feedback, recommend personalized workout plans, and track user progress.
 
-- Run the desktop application from the repository root:
+This project was developed as a final-year undergraduate project at **Rajarata University of Sri Lanka**.
 
-```bash
-python main.py
-```
+## Key Features
+
+- **User Authentication:** User registration, login, form validation, and email OTP verification.
+- **Pose Detection:** Detects human body poses using MediaPipe BlazePose.
+- **Repetition Counting:** Automatically counts repetitions for supported workout exercises.
+- **Posture Monitoring:** Analyzes exercise movements and provides posture-related feedback.
+- **Personalized Workout Recommendations:** Uses machine learning to recommend suitable workout plans.
+- **Progress Tracking:** Monitors workout activities and user progress.
+- **Augmented Reality Feedback:** Provides interactive workout experiences through Unity-based AR applications.
+- **Dashboard:** Displays workout-related information and progress.
+
+## Technologies Used
+
+- **Programming Languages:** Python, JavaScript, TypeScript, C#
+- **Frontend Technologies:** React, Vite
+- **Backend:** Python
+- **Computer Vision:** OpenCV, MediaPipe (BlazePose)
+- **Machine Learning:** Scikit-learn
+- **Desktop Application:** Tauri
+- **Augmented Reality:** Unity
+- **Database:** Database integration
+- **Development Tools:** Visual Studio Code, Jupyter Notebook, Git, GitHub
 
 ## Project Structure
 
-- `main.py` — application entrypoint for the desktop client.
-- `requirements.txt` — Python dependencies.
-- `backend/` — backend modules, database helpers, and ML utilities:
-  - `backend/ml/` — model code and `workout_plan_predictor.py`.
-  - `backend/models/` — data management and model storage helpers.
-  - `backend/database/` — database-related code.
-- `frontend/` — desktop UI and frontend assets:
-  - `frontend/ui/` — UI screens and widgets (fitness form, session, analytics, etc.).
-  - `frontend/assets/` — static assets (charts and plugins).
-- `Unity/` — packaged Unity builds for different exercises (exe folders for AR experiences).
+```text
+SMART-AR-Trainer/
+│
+├── backend/
+│   ├── ml/
+│   │   └── model_assets/
+│   ├── models/
+│   ├── tools/
+│   ├── utils/
+│   ├── api.py
+│   └── __init__.py
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   ├── src-tauri/
+│   └── package.json
+│
+├── Unity/
+│   └── AR exercise applications
+│
+├── main.py
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
 
-## How it works (high level)
+## Machine Learning Model Assets
 
-- The Python front end provides a desktop UI for login, user profile, starting workout sessions, and viewing analytics.
-- Unity builds in `Unity/` are standalone AR exercise executables that can be launched by the user; they communicate session data back to the Python backend utilities when enabled.
-- The `backend/ml` folder contains ML logic used to generate or recommend workout plans based on tracked activity.
+The repository includes trained model-related files required by the workout recommendation component.
 
-## Development Notes
+These assets are stored in:
 
-- To run unit tests or linting, add your preferred test tools and run them locally.
-- When updating or retraining models, follow the code in `backend/ml` and commit model artifacts under `backend/ml/model_assets/`.
+```text
+backend/ml/model_assets/
+```
 
-## Running Unity AR builds
+## Project Recognition
 
-Open the appropriate executable inside the matching folder under `Unity/` (for example, `Unity/CRUNCHES_AR_EXE/Crunches_Data/` contains the build files). These are prebuilt runtime folders rather than Unity project sources.
+- **NBQSA 2026:** Merit Award – Tertiary Student Project, Technology Category.
+- **RUSL Innorbit Carnival 2026:** Top 10 Finalist Project – Ranked 7th.
 
+## Development Team
+
+**Team Name:** Unified Explorers
+
+Developed as a final-year undergraduate project at the **Department of Computing, Faculty of Applied Sciences, Rajarata University of Sri Lanka**.
+
+## Repository Contents
+
+This repository contains:
+
+- Backend application source code
+- Frontend application source code
+- Machine learning model assets
+- Supporting resources and configurations
+- Project documentation
+
+---
+
+**SMART AR Trainer – Making Home Workouts Smarter with AI and Augmented Reality.**

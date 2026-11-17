@@ -37,3 +37,31 @@ Thumbs.db
 # Logs
 # =========================
 *.log
+
+
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary database and debug files
+db_data.json
+db_dump.json
+last_activity.json
+
+# Unity executable builds
+Unity/*_AR_EXE/
+Unity/PLANK_AR_EX/
+
+# Frontend dependencies
+node_modules/
+dist/
+
+# Temporary API testing and database scripts
+backend/test_put*.py
+backend/tmp_alter.py
