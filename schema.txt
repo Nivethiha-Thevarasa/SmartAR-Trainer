@@ -1,0 +1,16 @@
+CREATE TABLE "workout_session" (
+	"session_id"	INTEGER,
+	"trainee_id"	INTEGER,
+	"pushup_crt"	INTEGER,
+	"pushup_wrg"	INTEGER,
+	"jumpingjack_crt"	INTEGER,
+	"jumpingjack_wrg"	INTEGER,
+	"plank_time"	INTEGER,
+	"crunches_crt"	INTEGER,
+	"crunches_wrg"	INTEGER,
+	"squat_crt"	INTEGER,
+	"squat_wrg"	INTEGER,
+	"cobrastretch_time"	INTEGER,
+	PRIMARY KEY("session_id" AUTOINCREMENT),
+	FOREIGN KEY("trainee_id") REFERENCES "trainee"("trainee_id")
+)

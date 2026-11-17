@@ -1,0 +1,8 @@
+pandas
+joblib
+scikit-learn
+pywin32
+fastapi
+pydantic
+uvicorn[standard]
+pyjwt

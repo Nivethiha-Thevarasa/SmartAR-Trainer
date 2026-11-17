@@ -1,0 +1,39 @@
+# =========================
+# Unity folders
+# =========================
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Build output (your case)
+Unity/CRUNCHES_AR_EXE/
+
+# =========================
+# Environment files (IMPORTANT)
+# =========================
+.env
+.env.*
+*.env
+
+# =========================
+# Secrets / credentials
+# =========================
+config.json
+secrets.json
+
+# =========================
+# IDE / OS files
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log

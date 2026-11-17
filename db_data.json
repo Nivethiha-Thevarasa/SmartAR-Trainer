@@ -1,0 +1,32 @@
+[
+  {
+    "workout_id": 1,
+    "workout_name": "Jumping Jacks",
+    "description": "Stand straight with your feet together and hands by your sides.\n\nJump and spread your legs apart.\n\nAt the same time, raise your hands above your head.\n\nJump again and bring your legs back together.\n\nLower your hands back to your sides."
+  },
+  {
+    "workout_id": 2,
+    "workout_name": "Push Ups ",
+    "description": "Kneel down on the floor first.\n\nPlace both hands on the floor in front of you.\n\nKeep your hands under your shoulders.\n\nStretch your legs straight back.\n\nLift your knees off the floor.\n\nKeep your body straight like a straight line (from head to heels)."
+  },
+  {
+    "workout_id": 3,
+    "workout_name": "Plank",
+    "description": "Kneel down on the floor.\n\nPlace your forearms on the floor (elbows under your shoulders).\n\nStretch your legs straight back.\n\nLift your knees off the ground.\n\nKeep your body straight from head to heels.\n\nHold this position and breathe normally."
+  },
+  {
+    "workout_id": 4,
+    "workout_name": "Crunches",
+    "description": "Lie down on your back.\n\nBend your knees and keep your feet flat on the floor.\n\nPlace your hands behind your head or cross them on your chest.\n\nLift your shoulders slightly off the floor.\n\nLower your shoulders back down slowly."
+  },
+  {
+    "workout_id": 5,
+    "workout_name": "Squats",
+    "description": "Stand straight with your feet shoulder-width apart.\n\nKeep your back straight and chest up.\n\nBend your knees and push your hips back (like sitting on a chair).\n\nLower your body until your thighs are almost parallel to the floor.\n\nPush through your heels and stand back up."
+  },
+  {
+    "workout_id": 6,
+    "workout_name": "Cobra Stretch",
+    "description": "Lie down on your stomach.\n\nPlace your hands under your shoulders.\n\nKeep your legs straight and feet flat on the floor.\n\nSlowly push your upper body up using your hands.\n\nKeep your hips and legs on the floor.\n\nLook slightly upward and hold for a few seconds.\n\nSlowly lower your body back down."
+  }
+]

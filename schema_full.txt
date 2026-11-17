@@ -1,0 +1,68 @@
+Table: sqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+
+Table: workout_plan
+CREATE TABLE "workout_plan" (
+	"plan_id"	INTEGER,
+	"jumpingjack_count"	INTEGER,
+	"pushup_count"	INTEGER,
+	"plank_time"	INTEGER,
+	"crunches_count"	INTEGER,
+	"squat_count"	INTEGER,
+	"cobra_stretch_time"	INTEGER,
+	PRIMARY KEY("plan_id" AUTOINCREMENT)
+)
+
+Table: workout_session
+CREATE TABLE "workout_session" (
+	"session_id"	INTEGER,
+	"trainee_id"	INTEGER,
+	"pushup_crt"	INTEGER,
+	"pushup_wrg"	INTEGER,
+	"jumpingjack_crt"	INTEGER,
+	"jumpingjack_wrg"	INTEGER,
+	"plank_time"	INTEGER,
+	"crunches_crt"	INTEGER,
+	"crunches_wrg"	INTEGER,
+	"squat_crt"	INTEGER,
+	"squat_wrg"	INTEGER,
+	"cobrastretch_time"	INTEGER, created_at TEXT DEFAULT '2026-08-13T12:00:00Z',
+	PRIMARY KEY("session_id" AUTOINCREMENT),
+	FOREIGN KEY("trainee_id") REFERENCES "trainee"("trainee_id")
+)
+
+Table: workout
+CREATE TABLE "workout" (
+	"workout_id"	INTEGER,
+	"workout_name"	TEXT NOT NULL,
+	"description"	INTEGER, difficulty INTEGER DEFAULT 2, calories_min INTEGER DEFAULT 8, calories_max INTEGER DEFAULT 12, category TEXT DEFAULT 'Full Body',
+	PRIMARY KEY("workout_id" AUTOINCREMENT)
+)
+
+Table: trainee
+CREATE TABLE "trainee" (
+	"trainee_id"	INTEGER,
+	"name"	TEXT NOT NULL,
+	"email"	TEXT NOT NULL UNIQUE,
+	"pwd"	TEXT NOT NULL,
+	"dob"	TEXT,
+	"gender"	TEXT,
+	"height"	REAL,
+	"weight"	REAL,
+	"workout_experience"	TEXT,
+	"workout_duration"	REAL,
+	"weekly_frequency"	INTEGER,
+	"fitness_level"	TEXT,
+	"plan_id"	INTEGER, created_at TEXT,
+	PRIMARY KEY("trainee_id" AUTOINCREMENT),
+	FOREIGN KEY("plan_id") REFERENCES "workout_plan"("plan_id")
+)
+
+Table: workout_schedule
+CREATE TABLE workout_schedule (
+        schedule_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        trainee_id INTEGER,
+        scheduled_date TEXT,
+        FOREIGN KEY(trainee_id) REFERENCES trainee(trainee_id)
+    )
+
